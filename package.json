@@ -1,7 +1,7 @@
 {
     "name": "cryptoticker",
     "displayName": "CryptoTicker",
-    "description": "ticker for cryptocurrency",
+    "description": "Live ticker for cryptocurrencies like Bitcoin, Ethereum, Ripple, Litecoin, etc.",
     "version": "0.0.1",
     "publisher": "udayankumar",
      "repository": {
