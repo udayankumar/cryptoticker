@@ -1,0 +1,57 @@
+{
+    "name": "cryptoticker",
+    "displayName": "CryptoTicker",
+    "description": "ticker for cryptocurrency",
+    "version": "0.0.1",
+    "publisher": "udayankumar",
+     "repository": {
+        "type": "git",
+        "url": "https://github.com/udayankumar/cryptoticker"
+    },
+    "bugs": {
+        "url": "https://github.com/udayankumar/cryptoticker/issues"
+    },
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/src/extension",
+    "icon": "assets/icon.jpg",
+    "contributes": {
+        "configuration": {
+            "properties": {
+                "cryptoticker.cryptoSymbols": {
+                    "type": "array",
+                    "default": [
+                        "BTC",
+                        "ETH"
+                    ],
+                    "description": "The list of Crypto coin symbols that we want to display"
+                },
+                "cryptoticker.cryptoCurrency": {
+                    "type": "string",
+                    "default": "USD",
+                    "description": "The currency to use for crypto coin prices"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
