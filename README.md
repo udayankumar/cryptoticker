@@ -1,11 +1,11 @@
 
 # CryptoTicker
 
-Extension for Visual Studio Code -  Allows you to keep track of all the different crypto coin values in the currencies you prefer on the status bar
+Extension for Visual Studio Code -  Allows you to keep track of all the different crypto coin values in a currency you prefer on the status bar
 
 ## Features
 
-Add as many Crypto coin symbols as you like to the status bar, and they will be updated every 60 seconds. Just set `cryptoticker.cryptoSymbols` to an array of stock symbols to monitor. Example:
+Add as many Crypto coin symbols as you like to the status bar, and they will be updated every 60 seconds. Just set `cryptoticker.cryptoSymbols` to an array of crypto coin symbols to monitor. Example:
 ```json
 "cryptoticker.cryptoSymbols": [
     "BTC",
@@ -15,6 +15,15 @@ Add as many Crypto coin symbols as you like to the status bar, and they will be 
        
 ```
 
+One can change the default currency from `USD` to any currency using the standard TLA for them 
+
+```json
+
+"cryptoticker.cryptoCurrency" : "USD"
+```
+
+
+ A representative screenshot:
 <img src="https://raw.githubusercontent.com/udayankumar/cryptoticker/master/assets/screenshot.PNG">
 
 ## Disclaimer
