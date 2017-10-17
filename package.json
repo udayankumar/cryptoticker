@@ -2,7 +2,7 @@
     "name": "cryptoticker",
     "displayName": "CryptoTicker",
     "description": "Live ticker for cryptocurrencies like Bitcoin, Ethereum, Ripple, Litecoin, etc.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "udayankumar",
      "repository": {
         "type": "git",
