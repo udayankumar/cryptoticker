@@ -190,6 +190,7 @@ function refresh(): void {
         .map(symbol => symbol.toUpperCase())
     //pick only the top currency    
     const stringCurrency = config.get('cryptoticker.cryptoCurrency', 'USD')
+    const configExchange = config.get('cryptoticker.cryptoExchange','CCCAGG')
     const symbolCurrency = currencyMap[stringCurrency]
     if (!symbolCurrency ) {
         console.log('Currency not found')
@@ -199,7 +200,7 @@ function refresh(): void {
         fillEmpty(configuredSymbols, stringCurrency, symbolCurrency)
     }
 
-    refreshSymbols(configuredSymbols, stringCurrency, symbolCurrency)
+    refreshSymbols(configuredSymbols, stringCurrency, symbolCurrency, configExchange)
 }
 
 function fillEmpty(symbols: string[], stringCurrency: string, symbolCurrency:string): void {
@@ -223,9 +224,9 @@ function cleanup(): void {
     items = new Map<string, vscode.StatusBarItem>()
 }
 
-function refreshSymbols(symbols: string[], stringCurrency: string,  symbolCurrency: string): void {
+function refreshSymbols(symbols: string[], stringCurrency: string,  symbolCurrency: string, configExchange: string): void {
     symbols.forEach(function(element) {
-    const url = `https://min-api.cryptocompare.com/data/price?fsym=${element}&tsyms=${stringCurrency}`
+    const url = `https://min-api.cryptocompare.com/data/price?fsym=${element}&tsyms=${stringCurrency}&e=${configExchange}`
     
     httpGet(url).then(response => {
         // Remove prepended newline+comment
