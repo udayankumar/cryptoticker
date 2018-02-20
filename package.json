@@ -2,7 +2,7 @@
     "name": "cryptoticker",
     "displayName": "CryptoTicker",
     "description": "Live ticker for cryptocurrencies like Bitcoin, Ethereum, Ripple, Litecoin, etc.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "udayankumar",
      "repository": {
         "type": "git",
@@ -40,7 +40,7 @@
                 },
                 "cryptoticker.cryptoExchange": {
                     "type": "string",
-                    "default": "Coinbase",
+                    "default": "CCCAGG",
                     "description": "The exchange to use for crypto coin prices. Current options BTC38, BTCC, BTCE, BTER, Bit2C, Bitfinex, Bitstamp, Bittrex, CCEDK, Cexio, Coinbase, Coinfloor, Coinse, Coinsetter, Cryptopia, Cryptsy, Gatecoin, Gemini, HitBTC, Huobi, itBit, Kraken, LakeBTC, LocalBitcoins, MonetaGo, OKCoin, Poloniex, Yacuna, Yunbi, Yobit, Korbit, BitBay, BTCMarkets, QuadrigaCX, CoinCheck, BitSquare, Vaultoro, MercadoBitcoin, Unocoin, Bitso, BTCXIndia, Paymium, TheRockTrading, bitFlyer, Quoine, Luno, EtherDelta, Liqui, bitFlyerFX, BitMarket, LiveCoin, Coinone, Tidex, Bleutrade, EthexIndia "
                 }
             }

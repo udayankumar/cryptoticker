@@ -1,7 +1,10 @@
 # Change Log
 All notable changes to the "cryptoticker" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [This version]
+## [version 0.1.1]
+- Adding support for USDT 
+- making CCCAGG the default exchange as it supports most of the coins and currencies. Valuse may not be accurate
+
+## [version 0.1.0]
 - Adding support for selecting an exchange. 

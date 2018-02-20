@@ -3,6 +3,8 @@
 
 Extension for Visual Studio Code -  Allows you to keep track of all the different crypto coin values in a currency you prefer on the status bar. Now also allows selection of exchange for the prices.
 
+Adding support for USDT. 
+
 ## Features
 
 Add as many Crypto coin symbols as you like to the status bar, and they will be updated every 60 seconds. Just set `cryptoticker.cryptoSymbols` to an array of crypto coin symbols to monitor. Example:
