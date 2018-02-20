@@ -167,7 +167,8 @@ const currencyMap = {
   'XPF': '₣',
   'YER': '﷼',
   'ZAR': 'R',
-  'ZWD': 'Z$'
+  'ZWD': 'Z$',
+  'USDT': '₮'
 }
 
 
